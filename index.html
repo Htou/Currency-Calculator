@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Geldkoers berkenen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
+    <script src="assets/javascript/main.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Square_Cash_app_logo.svg/512px-Square_Cash_app_logo.svg.png" alt="dollar" class="header__logo">
+            <h1 class="header__heading">Geldkoers berekenen</h1>
+        </div>
+
+        <form name="converter">
+
+            <div class="price">
+                <div class="price__right">
+                    <label class="price__label">Euro</label>
+                    <input type="number" step=".01" name="euro" class="price__input" onChange="euroConverter()" >
+                </div>
+            </div>
+            <div class="price">
+                <div class="price__right">
+                    <label class="price__label">US Dollar</label>
+                    <input type="number" step=".01" name="dollar" class="price__input" onChange="dollarConverter()">
+                </div>
+            </div>
+            <div class="price">
+                <div class="price__right">
+                    <label class="price__label">Britse Pond</label>
+                    <input type="number" step=".01" name="pound" class="price__input" onChange="poundConverter()">
+                </div>
+            </div>
+            <div class="price">
+                <div class="price__right">
+                    <label class="price__label">Yen</label>
+                    <input type="number" step=".01" name="yen" class="price__input" onChange="yenConverter()">
+                </div>
+            </div>
+
+            <div>
+                <button type="button" class="btn">Wissel!</button>
+            </div>
+        </form>
+    </div>
+
+
+</body>
+</html>
